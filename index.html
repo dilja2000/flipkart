@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./index.css">
+
+  </head>
+<body class="bg-light">
+   <!-- section1 -->
+     <nav class="navbar navbar-expand-lg navbar-light " style="background-color: white;">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <img src="./main.svg" class="img-fluid ms-2" alt="Logo" style="height: 40px;">
+        </a>
+    
+        <!-- Search Box -->
+        <form class="d-none d-lg-flex ms-5" style="flex-grow: 1; max-width: 600px; ">
+          <div class="input-group">
+            <span class="input-group-text bg-muted border-end-0">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+            <input 
+              id="box1" 
+              class="form-control border-start-0 " 
+              type="search" 
+              placeholder="Search for Products, Brands and More" 
+              aria-label="Search">
+          </div>
+        </form>
+    
+        <!-- Navbar Toggle (Mobile View) -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <!-- Navbar Links and Dropdowns -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav ms-5">
+            <!-- Login Dropdown -->
+              <div class="dropdown">
+            <a href="./login.html"><button class="dropdown-button text-dark" style="background-color: white;"> <i class="fa-regular fa-user"></i>Login</button></a>
+            <div class="dropdown-content">
+              <a href="#"><i class="fa-regular fa-user text-dark"></i> My Profile</a>
+              <a href="#"><i class="fa-solid fa-fan text-dark"></i> Flipkart Plus Zone</a>
+              <a href="#"><i class="fa-solid fa-cube text-dark"></i> Orders</a>
+              <a href="#"><i class="fa-regular fa-heart text-dark"></i> Wishlist</a>
+                <a href="#"><i class="fa-solid fa-gift text-dark"></i> Rewards</a>
+                <a href="#"><i class="fa-solid fa-credit-card text-dark"></i> Gift Cards</a>
+            </div>
+          </div>
+            <!-- Other Links -->
+            <li class="nav-item">
+              <a class="nav-link" href="./cart.html"><i class="fa-solid fa-cart-shopping "></i> Cart</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-solid fa-gift ms-4"></i> Become a Seller</a>
+            </li>
+    
+            <!-- More Options Dropdown -->
+          
+          <div class="dropdown">
+            <a href="./login.html"><button class="dropdown-button text-dark " style="background-color: white;">  <i class="fa-solid fa-ellipsis-vertical text-dark ms-5"></i></button></a>
+            <div class="dropdown-content">
+              <a href="#"><i class="fa-regular fa-bell"></i> Notification Preferences</a>
+              <a href="#"><i class="fa-solid fa-headset"></i> 24x7 Customer Care</a>
+              <a href="#"><i class="fa-regular fa-arrow-up-right"></i> Advertise</a>
+              <a href="#"><i class="fa-solid fa-download"></i> Download App</a>
+            </div>
+          </div>
+<!-- Search Box (Mobile View) -->
+          <form class="d-lg-none mt-2">
+            <div class="input-group">
+              <span class="input-group-text bg-light border-end-0">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </span>
+              <input 
+                class="form-control border-start-0" 
+                type="search" 
+                placeholder="Search for Products, Brands and More" 
+                aria-label="Search">
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- end -->
+    <!-- section2 -->
+    <nav id="nav1" class="navbar navbar-expand-lg navbar-light mt-4 ms-5" style="background-color: white;">
+      <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                  <!-- Grocery -->
+                  <li class="nav-item mx-2 text-center ms-1">
+                      <img src="./grocery.webp" alt="Grocery">
+                      <a class="nav-link text-dark" href="#"><b>Grocery</b></a>
+                  </li>
+
+                  <!-- Mobile -->
+                  <li class="nav-item mx-2 text-center ms-4">
+                      <img src="./mobile.webp" alt="Mobile">
+                      <a class="nav-link text-dark" href="#"><b>Mobile</b></a>
+                  </li>
+
+                  <!-- Fashion -->
+                  <li class="nav-item dropdown mx-2 text-center ms-4">
+                      <img src="./fas.png" alt="Fashion">
+                      <a class="nav-link text-dark dropdown-toggle" href="#" role="button"
+                          data-bs-toggle="dropdown" aria-expanded="false"><b>Fashion</b></a>
+                      <ul class="dropdown-menu text-center">
+                          <li><a class="dropdown-item" href="#">Men's Clothing</a></li>
+                          <li><a class="dropdown-item" href="#">Women's Clothing</a></li>
+                          <li><a class="dropdown-item" href="#">Accessories</a></li>
+                          <li><a class="dropdown-item" href="#">Footwear</a></li>
+                      </ul>
+                  </li>
+
+                  <!-- Electronics -->
+                  <li class="nav-item dropdown mx-2 text-center ms-4">
+                      <img src="./elect.png" alt="Electronics">
+                      <a class="nav-link text-dark dropdown-toggle" href="#" role="button"
+                          data-bs-toggle="dropdown" aria-expanded="false"><b>Electronics</b></a>
+                      <ul class="dropdown-menu text-center">
+                          <li><a class="dropdown-item" href="#">Mobiles</a></li>
+                          <li><a class="dropdown-item" href="#">Laptops</a></li>
+                          <li><a class="dropdown-item" href="#">Cameras</a></li>
+                      </ul>
+                  </li>
+
+                  <!-- Home & Furniture -->
+                  <li class="nav-item dropdown mx-2 text-center ms-4">
+                      <img src="./home.png" alt="Home & Furniture">
+                      <a class="nav-link text-dark dropdown-toggle" href="#" role="button"
+                          data-bs-toggle="dropdown" aria-expanded="false"><b>Home & Furniture</b></a>
+                      <ul class="dropdown-menu text-center">
+                          <li><a class="dropdown-item" href="#">Furniture</a></li>
+                          <li><a class="dropdown-item" href="#">Decor</a></li>
+                          <li><a class="dropdown-item" href="#">Lighting</a></li>
+                      </ul>
+                  </li>
+
+                  <!-- Appliances -->
+                  <li class="nav-item mx-2 text-center ms-4">
+                      <img src="./app.png" alt="Appliances">
+                      <a class="nav-link text-dark" href="#"><b>Appliances</b></a>
+                  </li>
+
+                  <!-- Flight Bookings -->
+                  <li class="nav-item mx-2 text-center ms-2">
+                      <img src="./flight.webp" alt="Flight Bookings">
+                      <a class="nav-link text-dark" href="#"><b>Flight Bookings</b></a>
+                  </li>
+
+                  <!-- Beauty, Toys & More -->
+                  <li class="nav-item dropdown mx-2 text-center ms-4">
+                      <img src="./toy.png" alt="Beauty, Toys & More">
+                      <a class="nav-link text-dark dropdown-toggle" href="#" role="button"
+                          data-bs-toggle="dropdown" aria-expanded="false"><b>Beauty, Toys & More</b></a>
+                      <ul class="dropdown-menu text-center">
+                          <li><a class="dropdown-item" href="#">Beauty</a></li>
+                          <li><a class="dropdown-item" href="#">Toys</a></li>
+                          <li><a class="dropdown-item" href="#">Health</a></li>
+                      </ul>
+                  </li>
+
+                  <!-- Two-wheelers -->
+                  <li class="nav-item dropdown mx-2 text-center ms-4">
+                      <img src="./twowheeler.png" alt="Two-wheelers">
+                      <a class="nav-link text-dark dropdown-toggle" href="#" role="button"
+                          data-bs-toggle="dropdown" aria-expanded="false"><b>Two-wheelers</b></a>
+                      <ul class="dropdown-menu text-center">
+                          <li><a class="dropdown-item" href="#">Bikes</a></li>
+                          <li><a class="dropdown-item" href="#">Scooters</a></li>
+                      </ul>
+                  </li>
+
+              </ul>
+          </div>
+      </div>
+  </nav>
+    <!-- end -->
+
+<!-- section3 -->
+    <div class="card   mt-3 ms-3 me-3 " >
+      <div  class=" justify-content-center align-items-center text-center ">
+
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./aliya.webp" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./9bf64a81215e5986.webp" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./s3.webp" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./s4.webp" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- end -->
+     <!-- section4 -->
+    <div class="d-lg-flex">
+      <div id="card2" class="card mt-2 ms-3" style="max-width: 80%;">
+        <div class="card-body">
+          <h4 class="ms-3"><b>Best of Electronics</b></h4>
+          <figure class="figure text-center mt-3">
+            <img src="./s1.png" class="figure-img img-fluid rounded" alt="A bed mattress">
+            <figcaption class="figure-caption mt-3">Best Truewireless<br><b>Grab Now</b></figcaption>
+          </figure>
+          <figure class="figure text-center mt-3">
+            <img src="./s2.png" class="figure-img img-fluid rounded" alt="Beds">
+            <figcaption class="figure-caption mt-3">Mobile Speaker<br><b>From 499</b></figcaption>
+          </figure>
+           <figure class="figure text-center mt-3">
+            <img src="./s3.png" class="figure-img img-fluid rounded" alt="A study table">
+            <figcaption class="figure-caption mt-3">Mirrorless Cameras<br><b>Shop Now!</b></figcaption>
+          </figure>
+           <figure class="figure text-center mt-3">
+            <img src="./s4.png" class="figure-img img-fluid rounded" alt="A sofa">
+            <figcaption class="figure-caption mt-3">Monitors<br><b>From 7949</b></figcaption>
+          </figure>   
+          <figure class="figure text-center mt-3">
+            <img src="./s5.png" class="figure-img img-fluid rounded" alt="A sofa">
+            <figcaption class="figure-caption mt-3">Projector<br><b>From 6990</b></figcaption>
+          </figure>   
+        </div>
+      </div>
+      <div>
+        <img id="img0" src="./add.webp" class="img-fluid mt-2 ms-2 " >
+      </div>
+      </div>
+    <!-- end -->
+     <!-- section5 -->
+     <div class="container-fluid">
+      <div class="row">
+        <div id="card3" class="col-lg-9 col-md-8 col-sm-12 mt-3 ms-2">
+          <div class="card">
+            <div class="card-body">
+              <h4><b>Beauty,Food,Toys & More</b></h4>
+              <div class="d-flex flex-wrap justify-content-start">
+                <figure class="figure text-center me-2">
+                  <img id="img2" src="./stationary.jpg" class="figure-img img-fluid rounded" alt="Watches">
+                  <figcaption class="figure-caption text-dark">Top Selling Stationary<br><b>From 400</b></figcaption>
+                </figure>
+                <figure class="figure text-center me-2">
+                  <img id="img2" src="./cycle2.jpg" class="figure-img img-fluid rounded" alt="Monitors">
+                  <figcaption class="figure-caption text-dark">Cycles<br><b>From 899</b></figcaption>
+                </figure>
+                <figure class="figure text-center me-2">
+                  <img id="img2" src="./dry.jpg" class="figure-img img-fluid rounded" alt="Projector">
+                  <figcaption class="figure-caption text-dark">Dry Fruits<br><b>From 69</b></figcaption>
+                </figure>
+                <figure class="figure text-center me-2">
+                  <img id="img2" src="./micro.jpg" class="figure-img img-fluid rounded" alt="Mirrorless Cameras">
+                  <figcaption class="figure-caption text-dark">Microphones<br><b>Shop Now</b></figcaption>
+                </figure>
+                <figure class="figure text-center me-2">
+                  <img id="img2" src="./gym.jpg" class="figure-img img-fluid rounded" alt="Portable Electronics">
+                  <figcaption class="figure-caption text-dark">Gym Essentials<br><b>Upto 15% Off</b></figcaption>
+                </figure>
+                <figure class="figure text-center me-2">
+                  <img id="img2" src="./string.jpg" class="figure-img img-fluid rounded" alt="Portable Electronics">
+                  <figcaption class="figure-caption text-dark">Musical Instruments<br><b>From 1000</b></figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end -->
+     <!-- section6 -->
+    <div class="d-lg-flex">
+      <div id="card4" class="card mt-2 ms-3" style="max-width: 440px;">
+        <div class="card-body">
+          <h4 class="ms-3"><b>Home Decor&Furnishins</b></h4>
+          <figure class="figure text-center mt-3">
+            <img src="./jacket.jpg" class="figure-img img-fluid rounded" alt="A bed mattress">
+            <figcaption class="figure-caption mt-3">Mens Jacket<br><b><span style="color: green;">Min 50% Off</span></b></figcaption>
+          </figure>
+          <figure class="figure text-center mt-3">
+            <img src="./sweater.webp" class="figure-img img-fluid rounded" alt="Beds">
+            <figcaption class="figure-caption mt-3">Mens Sweaters<br><b><span style="color: green;">Popular</span></b></figcaption>
+          </figure>
+          <figure class="figure text-center mt-3">
+            <img src="./shirt.webp" class="figure-img img-fluid rounded" alt="A study table">
+            <figcaption class="figure-caption mt-3">Sweater Shirts<br><b><span style="color: green;">Min 50% Off</span></b></figcaption>
+          </figure>
+          <figure class="figure text-center mt-3">
+            <img src="./muff.webp" class="figure-img img-fluid rounded" alt="A sofa">
+            <figcaption class="figure-caption mt-3">Mufflers<br><span style="color: green;">Min 50% Off</span></figcaption>
+          </figure>
+        </div>
+      </div>
+      <div>
+        <img id="img1" src="./bigim2.jpg" class="img-fluid mt-2 ms-4 " >
+      </div>
+      </div>
+
+    <!-- end -->
+     <!-- section7 -->
+      <div class="d-lg-flex">
+        <div id="card4" class="card mt-2 ms-2" style="max-width: 440px;">
+          <div class="card-body">
+            <h4 class="ms-3"><b>Make Your Home Stylish</b></h4>
+            <figure class="figure text-center mt-3">
+              <img src="./bed.jpg" class="figure-img img-fluid rounded" alt="A bed mattress">
+              <figcaption class="figure-caption mt-3">Bed Mattress<br><b><span style="color: green;">Min 50% Off</span></b></figcaption>
+            </figure>
+            <figure class="figure text-center mt-3">
+              <img src="./beds.jpg" class="figure-img img-fluid rounded" alt="Beds">
+              <figcaption class="figure-caption mt-3">Beds<br><b><span style="color: green;">Min 50% Off</span></b></figcaption>
+            </figure>
+            <figure class="figure text-center mt-3">
+              <img src="./study.jpg" class="figure-img img-fluid rounded" alt="A study table">
+              <figcaption class="figure-caption mt-3">Office Study Chairs<br><b><span style="color: green;">Min 50% Off</span></b></figcaption>
+            </figure>
+            <figure class="figure text-center mt-3">
+              <img src="./sofa.jpg" class="figure-img img-fluid rounded" alt="A sofa">
+              <figcaption class="figure-caption mt-3">Sofa&Sectionals<br><span style="color: green;">Min 50% Off</span></figcaption>
+            </figure>
+          </div>
+        </div>
+        <div id="card4" class="card mt-2 ms-1" style="max-width: 440px;">
+          <div class="card-body">
+            <h4 class="ms-3"><b>End Of Season BestSellers</b></h4>
+            <figure class="figure text-center mt-3">
+              <img src="./dinings.jpg" class="figure-img img-fluid rounded" alt="A bed mattress">
+              <figcaption class="figure-caption mt-3">Dining Sets<br><b><span style="color: green;">Min 50% Off</span></b></figcaption>
+            </figure>
+            <figure class="figure text-center mt-3">
+              <img src="./lehenga.jpg" class="figure-img img-fluid rounded" alt="Beds">
+              <figcaption class="figure-caption mt-3">Womens Lehenga<br><b><span style="color: green;">Special Offer</span></b></figcaption>
+            </figure>
+            <figure class="figure text-center mt-3">
+              <img src="./dress.jpg" class="figure-img img-fluid rounded" alt="A study table">
+              <figcaption class="figure-caption mt-3">Women dresses<br><b><span style="color: green;">Min 50% Off</span></b></figcaption>
+            </figure>
+            <figure class="figure text-center mt-3">
+              <img src="./perfume.jpg" class="figure-img img-fluid rounded" alt="A sofa">
+              <figcaption class="figure-caption mt-3">Perfumes<br><span style="color: green;">Min 50% Off</span></figcaption>
+            </figure>
+          </div>
+        </div>
+    <div id="card4" class="card mt-2 ms-1 " style="max-width: 440px;">
+      <div  class="card-body ">
+        <h4 class="ms-3"><b>Best Gadgests&Appliances</b></h4>
+        <figure class="figure text-center mt-3 ">
+          <img src="./ac.jpg"  class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+          <figcaption class="figure-caption mt-3">Air Conditioners<br><b><span style="color: green;"> Min 50% Off</span></b></figcaption>
+        </figure>
+        <figure class="figure text-center mt-3 ">
+          <img src="./tv.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+          <figcaption class="figure-caption mt-3">Televisions<br><b><span style="color: green;">Min 30% Off</span></b></figcaption>
+        </figure> <br>
+        <figure class="figure text-center mt-3 ">
+          <img src="./tab.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+          <figcaption class="figure-caption mt-3">Tablets<br><b><span style="color: green;">Min 40% Off</span></b></figcaption>
+        </figure> 
+        <figure class="figure text-center mt-3 ">
+          <img src="./wash.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+          <figcaption class="figure-caption mt-3">Washing Machines<br><b><span style="color: green;">Min 50% Off</span></b></figcaption>
+        </figure> 
+      </div>
+    </div>
+  </div>
+  <!-- end -->
+   <!-- section8 -->
+  
+   <div class="d-lg-flex">
+    <div id="card4" class="card mt-2 ms-2" style="max-width: 440px;">
+      <div class="card-body">
+        <h4 class="ms-3"><b>Home Decor&Furnishins</b></h4>
+        <figure class="figure text-center mt-3">
+          <img src="./lint.jpg" class="figure-img img-fluid rounded" alt="A bed mattress">
+          <figcaption class="figure-caption mt-3">Lint Rollers<br><b><span style="color: green;">Min 50% Off</span></b></figcaption>
+        </figure>
+        <figure class="figure text-center mt-3">
+          <img src="./plant.jpg" class="figure-img img-fluid rounded" alt="Beds">
+          <figcaption class="figure-caption mt-3">Plant Containers<br><b><span style="color: green;">Min 50% Off</span></b></figcaption>
+        </figure>
+        <figure class="figure text-center mt-3">
+          <img src="./kitchen.jpg" class="figure-img img-fluid rounded" alt="A study table">
+          <figcaption class="figure-caption mt-3">Kitchen Containers<br><b><span style="color: green;">Min 50% Off</span></b></figcaption>
+        </figure>
+        <figure class="figure text-center mt-3">
+          <img src="./carpet.jpg" class="figure-img img-fluid rounded" alt="A sofa">
+          <figcaption class="figure-caption mt-3">Carpet Rugs<br><span style="color: green;">Min 50% Off</span></figcaption>
+        </figure>
+      </div>
+    </div>
+    <div id="card4" class="card mt-2 ms-1" style="max-width: 440px;">
+      <div class="card-body">
+        <h4 class="ms-3"><b>Sports&Fitness Essentials</b></h4>
+        <figure class="figure text-center mt-3">
+          <img src="./cricket.jpg" class="figure-img img-fluid rounded" alt="A bed mattress">
+          <figcaption class="figure-caption mt-3">Cricket Balls<br><b><span style="color: green;">Min 50% Off</span></b></figcaption>
+        </figure>
+        <figure class="figure text-center mt-3">
+          <img src="./carrom.jpg" class="figure-img img-fluid rounded" alt="Beds">
+          <figcaption class="figure-caption mt-3">Carrom<br><b><span style="color: green;">Hand Picked</span></b></figcaption>
+        </figure>
+        <figure class="figure text-center mt-3">
+          <img src="./basket.jpg" class="figure-img img-fluid rounded" alt="A study table">
+          <figcaption class="figure-caption mt-3">Basketballs<br><b><span style="color: green;">Min 50% Off</span></b></figcaption>
+        </figure>
+        <figure class="figure text-center mt-3">
+          <img src="./tennis.jpg" class="figure-img img-fluid rounded" alt="A sofa">
+          <figcaption class="figure-caption mt-3">Table Tennis<br><span style="color: green;">Special Offers</span></figcaption>
+        </figure>
+      </div>
+    </div>
+<div id="card4" class="card mt-2 ms-1 " style="max-width: 440px;">
+  <div  class="card-body ">
+    <h4 class="ms-3"><b>Trending Styles For Her</b></h4>
+    <figure class="figure text-center mt-3 ">
+      <img src="./hair.jpg"  class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+      <figcaption class="figure-caption mt-3">Hair Straightner<br><b><span style="color: green;"> Min 50% Off</span></b></figcaption>
+    </figure>
+    <figure class="figure text-center mt-3 ">
+      <img src="./dryer.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+      <figcaption class="figure-caption mt-3">Hair Dryers<br><b><span style="color: green;">Min 30% Off</span></b></figcaption>
+    </figure> <br>
+    <figure class="figure text-center mt-3 ">
+      <img src="./groomimg.webp" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+      <figcaption class="figure-caption mt-3">Grooming Kit<br><b><span style="color: green;">Min 40% Off</span></b></figcaption>
+    </figure> 
+    <figure class="figure text-center mt-3 ">
+      <img src="./cutler.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+      <figcaption class="figure-caption mt-3">Hair Curlers<br><b><span style="color: green;">Min 50% Off</span></b></figcaption>
+    </figure> 
+  </div>
+</div>
+</div>
+<!-- end -->
+ <!-- section9 -->
+ <div class="container-fluid">
+  <div class="row">
+    <div id="card3" class="col-lg-9 col-md-8 col-sm-12 mt-3 ms-2">
+      <div class="card">
+        <div class="card-body">
+          <h4><b>Grooming,Books,Auto&More</b></h4>
+          <div class="d-flex flex-wrap justify-content-start">
+            <figure class="figure text-center me-2">
+              <img id="img2" src="./coffee.jpg" class="figure-img img-fluid rounded" alt="Watches">
+              <figcaption class="figure-caption text-dark">Coffee Powder<br><b>Upto 80% Off</b></figcaption>
+            </figure>
+            <figure class="figure text-center me-2">
+              <img id="img2" src="./cycle2.jpg" class="figure-img img-fluid rounded" alt="Monitors">
+              <figcaption class="figure-caption text-dark">Geared Cycles<br><b>Upto 70% Off</b></figcaption>
+            </figure>
+            <figure class="figure text-center me-2">
+              <img id="img2" src="./remote.webp" class="figure-img img-fluid rounded" alt="Projector">
+              <figcaption class="figure-caption text-dark">Remote Controll Toys<br><b>Upto 80% Off</b></figcaption>
+            </figure>
+            <figure class="figure text-center me-2">
+              <img id="img2" src="./piano.jpg" class="figure-img img-fluid rounded" alt="Mirrorless Cameras">
+              <figcaption class="figure-caption text-dark">Musical Keyboards<br><b>Upto 80% Off</b></figcaption>
+            </figure>
+            <figure class="figure text-center me-2">
+              <img id="img2" src="dry.jpg" class="figure-img img-fluid rounded" alt="Portable Electronics">
+              <figcaption class="figure-caption text-dark">Dry Fruits<br><b>Upto 70% Off</b></figcaption>
+            </figure>
+            <figure class="figure text-center me-2">
+              <img id="img2" src="./gym.jpg" class="figure-img img-fluid rounded" alt="Portable Electronics">
+              <figcaption class="figure-caption text-dark">Gym Essentials<br><b>From 139</b></figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end -->
+ <!-- section10 -->
+<div class="container-fluid">
+  <div class="row">
+    <div id="card3" class="col-lg-9 col-md-8 col-sm-12 mt-3 ms-2">
+      <div class="card">
+        <div class="card-body">
+          <h4><b>Furniture Deals</b></h4>
+          <div class="d-flex flex-wrap justify-content-start">
+            <figure class="figure text-center me-2">
+              <img id="img2" src="./bed.jpg" class="figure-img img-fluid rounded" alt="Watches">
+              <figcaption class="figure-caption text-dark">Mattresses<br><b>From 2000</b></figcaption>
+            </figure>
+            <figure class="figure text-center me-2">
+              <img id="img2" src="./sofa.jpg" class="figure-img img-fluid rounded" alt="Monitors">
+              <figcaption class="figure-caption text-dark">Sofa&Sectional<br><b>From 7000</b></figcaption>
+            </figure>
+            <figure class="figure text-center me-2">
+              <img id="img2" src="./study.jpg" class="figure-img img-fluid rounded" alt="Projector">
+              <figcaption class="figure-caption text-dark">Office Study Chairs<br><b>From 1800</b></figcaption>
+            </figure>
+            <figure class="figure text-center me-2">
+              <img id="img2" src="./beds.jpg" class="figure-img img-fluid rounded" alt="Mirrorless Cameras">
+              <figcaption class="figure-caption text-dark">Beds<br><b>From 1700</b></figcaption>
+            </figure>
+            <figure class="figure text-center me-2">
+              <img id="img2" src="tv.jpg" class="figure-img img-fluid rounded" alt="Portable Electronics">
+              <figcaption class="figure-caption text-dark">Tv Units<br><b>From 1200</b></figcaption>
+            </figure>
+            <figure class="figure text-center me-2">
+              <img id="img2" src="./outchair.jpg" class="figure-img img-fluid rounded" alt="Portable Electronics">
+              <figcaption class="figure-caption text-dark">Outdoor Chairs<br><b>From 990</b></figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end -->
+ <!-- section11 -->
+ <div class="d-lg-flex">
+<div id="card4" class="card mt-2 ms-3" style="max-width: 440px;">
+  <div class="card-body">
+    <h4 class="ms-3"><b>Home Decor&Furnishins</b></h4>
+    <figure class="figure text-center mt-3">
+      <img src="./lint.jpg" class="figure-img img-fluid rounded" alt="A bed mattress">
+      <figcaption class="figure-caption mt-3">Lint Rollers<br><b><span style="color: green;">Min 50% Off</span></b></figcaption>
+    </figure>
+    <figure class="figure text-center mt-3">
+      <img src="./plant.jpg" class="figure-img img-fluid rounded" alt="Beds">
+      <figcaption class="figure-caption mt-3">Plant Containers<br><b><span style="color: green;">Min 50% Off</span></b></figcaption>
+    </figure>
+    <figure class="figure text-center mt-3">
+      <img src="./kitchen.jpg" class="figure-img img-fluid rounded" alt="A study table">
+      <figcaption class="figure-caption mt-3">Kitchen Containers<br><b><span style="color: green;">Min 50% Off</span></b></figcaption>
+    </figure>
+    <figure class="figure text-center mt-3">
+      <img src="./carpet.jpg" class="figure-img img-fluid rounded" alt="A sofa">
+      <figcaption class="figure-caption mt-3">Carpet Rugs<br><span style="color: green;">Min 50% Off</span></figcaption>
+    </figure>
+  </div>
+</div>
+<div>
+  <img id="img1" src="./fly.jpg" class="img-fluid mt-2 ms-4 " >
+</div>
+</div>
+<!-- end -->
+ <!-- section12 -->
+  <div class="container-fluid">
+      <div class="row">
+        <div id="card3" class="col-lg-9 col-md-8 col-sm-12 mt-3 ms-2">
+          <div class="card">
+            <div class="card-body">
+              <h4><b>Fashion Top Deals</b></h4>
+              <div class="d-flex flex-wrap justify-content-start">
+                <figure class="figure text-center me-2">
+                  <img id="img2" src="./shoe1.jpg" class="figure-img img-fluid rounded" alt="Watches">
+                  <figcaption class="figure-caption text-dark"> <p>Puma,Adidas<br><b>Upto 70% Off</b></p></figcaption>
+                </figure>
+                <figure class="figure text-center me-2">
+                  <img id="img2" src="./shoe.jpg" class="figure-img img-fluid rounded" alt="Monitors">
+                  <figcaption class="figure-caption text-dark">Best Selling Styles<br><b>From 599</b></figcaption>
+                </figure>
+                <figure class="figure text-center me-2">
+                  <img id="img2" src="./kids.jpg" class="figure-img img-fluid rounded" alt="Projector">
+                  <figcaption class="figure-caption text-dark">Fashion Dream<br><b>Under 200</b></figcaption>
+                </figure>
+                <figure class="figure text-center me-2">
+                  <img id="img2" src="./gowns.jpg" class="figure-img img-fluid rounded" alt="Mirrorless Cameras">
+                  <figcaption class="figure-caption text-dark">Trendy Gowns<br><b>From 790</b></figcaption>
+                </figure>
+                <figure class="figure text-center me-2">
+                  <img id="img2" src="./lehenga.jpg" class="figure-img img-fluid rounded" alt="Portable Electronics">
+                  <figcaption class="figure-caption text-dark">Lehangas<br><b>Min 20% Off</b></figcaption>
+                </figure>
+                <figure class="figure text-center me-2">
+                  <img id="img2" src="./saree1.webp" class="figure-img img-fluid rounded" alt="Portable Electronics">
+                  <figcaption class="figure-caption text-dark">Dress Materials<br><b>Upto 75% Off</b></figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+     <!-- end -->
+      <!-- section13 -->
+      <div class="container-fluid">
+        <div class="row">
+          <div id="card3" class="col-lg-9 col-md-8 col-sm-12 mt-3 ms-2">
+            <div class="card">
+              <div class="card-body">
+                <h4><b>Top Deals</b></h4>
+                <div class="d-flex flex-wrap justify-content-start">
+                  <figure class="figure text-center me-2">
+                    <img id="img2" src="./bag.webp" class="figure-img img-fluid rounded" alt="Watches">
+                    <figcaption class="figure-caption text-dark"> <p>Camera bags<br><b>Upto 70% Off</b></p></figcaption>
+                  </figure>
+                  <figure class="figure text-center me-2">
+                    <img id="img2" src="./ipad.jpg" class="figure-img img-fluid rounded" alt="Monitors">
+                    <figcaption class="figure-caption text-dark">Apple ipads<br><b>From 599</b></figcaption>
+                  </figure>
+                  <figure class="figure text-center me-2">
+                    <img id="img2" src="./saree2.jpg" class="figure-img img-fluid rounded" alt="Projector">
+                    <figcaption class="figure-caption text-dark">Silk Sarees<br><b>Under 200</b></figcaption>
+                  </figure>
+                  <figure class="figure text-center me-2">
+                    <img id="img2" src="./camera.jpg" class="figure-img img-fluid rounded" alt="Mirrorless Cameras">
+                    <figcaption class="figure-caption text-dark">Silk Sarees<br><b>Under 200</b></figcaption>
+                  </figure>
+                  <figure class="figure text-center me-2">
+                    <img id="img2" src="./kurthha.jpg" class="figure-img img-fluid rounded" alt="Portable Electronics">
+                    <figcaption class="figure-caption text-dark">Kurthas<br><b>Min 20% Off</b></figcaption>
+                  </figure>
+                  <figure class="figure text-center me-2">
+                    <img id="img2" src="./lehe.webp" class="figure-img img-fluid rounded" alt="Portable Electronics">
+                    <figcaption class="figure-caption text-dark">Top Selling Lehenga<br><b>Upto 75% Off</b></figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+<!-- end -->
+ <!-- section14 -->
+ <div class="container-fluid">
+  <div class="row">
+    <div id="card3" class="col-lg-9 col-md-8 col-sm-12 mt-3 ms-2">
+      <div class="card">
+        <div class="card-body">
+          <h4><b>Book,Toys &More</b></h4>
+          <div class="d-flex flex-wrap justify-content-start">
+            <figure class="figure text-center me-2">
+              <img id="img2" src="./helmet.jpg" class="figure-img img-fluid rounded" alt="Watches">
+              <figcaption class="figure-caption text-dark"> <p>Helmet<br><b>Upto 70% Off</b></p></figcaption>
+            </figure>
+            <figure class="figure text-center me-2">
+              <img id="img2" src="./bikelight.jpg" class="figure-img img-fluid rounded" alt="Monitors">
+              <figcaption class="figure-caption text-dark">Bike Light Bulb<br><b>From 599</b></figcaption>
+            </figure>
+            <figure class="figure text-center me-2">
+              <img id="img2" src="./gloves.jpg" class="figure-img img-fluid rounded" alt="Projector">
+              <figcaption class="figure-caption text-dark">Riding Glove<br><b>Under 200</b></figcaption>
+            </figure>
+            <figure class="figure text-center me-2">
+              <img id="img2" src="./carl.webp" class="figure-img img-fluid rounded" alt="Mirrorless Cameras">
+              <figcaption class="figure-caption text-dark">Car Light Bulb<br><b>Under 200</b></figcaption>
+            </figure>
+            <figure class="figure text-center me-2">
+              <img id="img2" src="./books.jpg" class="figure-img img-fluid rounded" alt="Portable Electronics">
+              <figcaption class="figure-caption text-dark">Self Help Books<br><b>Min 20% Off</b></figcaption>
+            </figure>
+            <figure class="figure text-center me-2">
+              <img id="img2" src="./cloth.jpg" class="figure-img img-fluid rounded" alt="Portable Electronics">
+              <figcaption class="figure-caption text-dark">Vehicle Wasing Cloths <br><b>Upto 75% Off</b></figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 
+<!-- end -->
+ <!-- section15 -->
+ <div style="background-color: rgb(210, 212, 212); padding: 1rem; " class="mt-4 ">
+  <h6 class=" ms-5 mt-3">Top Stories: Brand Directory</h6>
+  <p id="para1" class="ms-5">
+      MOST SEARCHED FOR ON FLIPKART:
+      iphone16 | iphone16plus | iphone16Pro | iphone16ProMax | Readme16Pro | Whoopband | OppoFind XB | Flipkart minutes | Flipkart exchange | Flipkart Reset | Nothing
+      Phone 2a Plus | Sarees | CMF by Nothing phone 1 | Pocket Bazaar | Xioami 14 CIVI | Infinix Note 40 Pro 5G | iphone15 | Infinix Note 40 5G | iphone 15 plus | 
+      vivo X Foid3 Pro | Motorol g04s | vivo X 100 | OnePlus Nord CE 3 Lite 5G | Spoy | Store | SAMSUNG Flip5 | SAMSUNG Fo15 | Flipkart Axis Bank Super Elite Credit Card |
+       5G Mobile Phones | Prmebook Laptops | Moto Edge 40 | Grievance Redressal | OPPO Reno7 Pro 5G | Help Centre | Track Orders | Manage Orders | Return Orders | Gift Cards Store | Flipkart Axis Bank Credit Card | Pay Later
+  </p>
+  <p id="para1" class="ms-5">
+     MOBILES:
+      iphone16 | iphone16plus | iphone16Pro | iphone16ProMax | Readme16Pro | Whoopband | OppoFind XB | Flipkart minutes | Flipkart exchange | Flipkart Reset | Nothing
+      Phone 2a Plus | Sarees | CMF by Nothing phone 1 | Pocket Bazaar | Xioami 14 CIVI | Infinix Note 40 Pro 5G | iphone15 | Infinix Note 40 5G | iphone 15 plus | 
+      vivo X Foid3 Pro | Motorol g04s | vivo X 100 | OnePlus Nord CE 3 Lite 5G | Spoy | Store | SAMSUNG Flip5 | SAMSUNG Fo15 | Flipkart Axis Bank Super Elite Credit Card |
+       5G Mobile Phones | Prmebook Laptops | Moto Edge 40 | Grievance Redressal | OPPO Reno7 Pro 5G | Help Centre | Track Orders | Manage Orders | Return Orders | Gift Cards Store | Flipkart Axis Bank Credit Card | Pay Later
+  </p>
+  <p id="para1" class="ms-5">
+    CAMERA:Go Pro Action Camera | Nikon Camera | Cannon Camera | Sony Camera | Canon DSLR | Nikon DSLR 
+  </p>
+  <p id="para1" class="ms-5">
+      LAPTOPS:
+      iphone16 | iphone16plus | iphone16Pro | iphone16ProMax | Readme16Pro | Whoopband | OppoFind XB | Flipkart minutes | Flipkart exchange | Flipkart Reset | Nothing
+      Phone 2a Plus | Sarees | CMF by Nothing phone 1 | Pocket Bazaar | Xioami 14 CIVI | Infinix Note 40 Pro 5G | iphone15 | Infinix Note 40 5G | iphone 15 plus | 
+      vivo X Foid3 Pro | Motorol g04s | vivo X 100 | OnePlus Nord CE 3 Lite 5G | Spoy | Store | SAMSUNG Flip5 | SAMSUNG Fo15 | Flipkart Axis Bank Super Elite Credit Card |
+       5G Mobile Phones | Prmebook Laptops | Moto Edge 40 | Grievance Redressal | OPPO Reno7 Pro 5G | Help Centre | Track Orders | Manage Orders | Return Orders | Gift Cards Store | Flipkart Axis Bank Credit Card | Pay Later
+  </p>
+  <p id="para1" class="ms-5">
+     TVS:Nokia TV | Panasonic Tv | Thomson Tv | Mi x Pro | Realme TV | Motorola TV | onePlus TV | LG TV | TV | Sony TV | Samsung TV | Android Television | Iffalcon Tv | MI Tv
+  </p>
+  <p id="para1" class="ms-5">
+      LARGE APPLIANCE:
+      iphone16 | iphone16plus | iphone16Pro | iphone16ProMax | Readme16Pro | Whoopband | OppoFind XB | Flipkart minutes | Flipkart exchange | Flipkart Reset | Nothing
+      Phone 2a Plus | Sarees | CMF by Nothing phone 1 | Pocket Bazaar | Xioami 14 CIVI | Infinix Note 40 Pro 5G | iphone15 | Infinix Note 40 5G | iphone 15 plus | 
+      vivo X Foid3 Pro | Motorol g04s | vivo X 100 | OnePlus Nord CE 3 Lite 5G | Spoy | Store | SAMSUNG Flip5 | SAMSUNG Fo15 | Flipkart Axis Bank Super Elite Credit Card |
+       5G Mobile Phones | Prmebook Laptops | Moto Edge 40 | Grievance Redressal | OPPO Reno7 Pro 5G | Help Centre | Track Orders | Manage Orders | Return Orders | Gift Cards Store | Flipkart Axis Bank Credit Card | Pay Later
+  </p>
+  <p id="para1" class="ms-5">
+      CLOTHING:
+      iphone16 | iphone16plus | iphone16Pro | iphone16ProMax | Readme16Pro | Whoopband | OppoFind XB | Flipkart minutes | Flipkart exchange | Flipkart Reset | Nothing
+      Phone 2a Plus | Sarees | CMF by Nothing phone 1 | Pocket Bazaar | Xioami 14 CIVI | Infinix Note 40 Pro 5G | iphone15 | Infinix Note 40 5G | iphone 15 plus | 
+      vivo X Foid3 Pro | Motorol g04s | vivo X 100 | OnePlus Nord CE 3 Lite 5G | Spoy | Store | SAMSUNG Flip5 | SAMSUNG Fo15 | Flipkart Axis Bank Super Elite Credit Card |
+       5G Mobile Phones | Prmebook Laptops | Moto Edge 40 | Grievance Redressal | OPPO Reno7 Pro 5G | Help Centre | Track Orders | Manage Orders | Return Orders | Gift Cards Store | Flipkart Axis Bank Credit Card | Pay Later
+  </p>
+  <p id="para1" class="ms-5">
+     FOOTWARE:
+      iphone16 | iphone16plus | iphone16Pro | iphone16ProMax | Readme16Pro | Whoopband | OppoFind XB | Flipkart minutes | Flipkart exchange | Flipkart Reset | Nothing
+      Phone 2a Plus | Sarees | CMF by Nothing phone 1 | Pocket Bazaar | Xioami 14 CIVI | Infinix Note 40 Pro 5G | iphone15 | Infinix Note 40 5G | iphone 15 plus | 
+      vivo X Foid3 Pro | Motorol g04s | vivo X 100 | OnePlus Nord CE 3 Lite 5G | Spoy | Store | SAMSUNG Flip5 | SAMSUNG Fo15 | Flipkart Axis Bank Super Elite Credit Card |
+       5G Mobile Phones | Prmebook Laptops | Moto Edge 40 | Grievance Redressal | OPPO Reno7 Pro 5G | Help Centre | Track Orders | Manage Orders | Return Orders | Gift Cards Store | Flipkart Axis Bank Credit Card | Pay Later
+  </p>
+  <p id="para1" class="ms-5">
+      GROCERIES:PhonePe Grocery Voucher | Hand Wash | Soap | Cashew Nuts | Sunflower Oil | Eggs | Toilet Cleaner | Harpic Toilet Cleaner | DEttol Soap | Mustard Oil | Biscuits | Cheese | Patanjali Atta | Fortune Oil | Ashirvad Atta | Tea
+  </p>
+  <p id="para1" class="ms-5">
+      BEST SELLING ON FLIPKART:
+      iphone16 | iphone16plus | iphone16Pro | iphone16ProMax | Readme16Pro | Whoopband | OppoFind XB | Flipkart minutes | Flipkart exchange | Flipkart Reset | Nothing
+      Phone 2a Plus | Sarees | CMF by Nothing phone 1 | Pocket Bazaar | Xioami 14 CIVI | Infinix Note 40 Pro 5G | iphone15 | Infinix Note 40 5G | iphone 15 plus | 
+      vivo X Foid3 Pro | Motorol g04s | vivo X 100 | OnePlus Nord CE 3 Lite 5G | Spoy | Store | SAMSUNG Flip5 | SAMSUNG Fo15 | Flipkart Axis Bank Super Elite Credit Card |
+       5G Mobile Phones | Prmebook Laptops | Moto Edge 40 | Grievance Redressal | OPPO Reno7 Pro 5G | Help Centre | Track Orders | Manage Orders | Return Orders | Gift Cards Store | Flipkart Axis Bank Credit Card | Pay Later
+  </p>
+  <p id="para1" class="ms-5">
+      FURNITURE:
+      iphone16 | iphone16plus | iphone16Pro | iphone16ProMax | Readme16Pro | Whoopband | OppoFind XB | Flipkart minutes | Flipkart exchange | Flipkart Reset | Nothing
+      Phone 2a Plus | Sarees | CMF by Nothing phone 1 | Pocket Bazaar | Xioami 14 CIVI | Infinix Note 40 Pro 5G | iphone15 | Infinix Note 40 5G | iphone 15 plus | 
+      vivo X Foid3 Pro | Motorol g04s | vivo X 100 | OnePlus Nord CE 3 Lite 5G | Spoy | Store | SAMSUNG Flip5 | SAMSUNG Fo15 | Flipkart Axis Bank Super Elite Credit Card |
+       5G Mobile Phones | Prmebook Laptops | Moto Edge 40 | Grievance Redressal | OPPO Reno7 Pro 5G | Help Centre | Track Orders | Manage Orders | Return Orders | Gift Cards Store | Flipkart Axis Bank Credit Card | Pay Later
+  </p>
+  <p id="para1" class="ms-5">
+     BGWH:
+      iphone16 | iphone16plus | iphone16Pro | iphone16ProMax | Readme16Pro | Whoopband | OppoFind XB | Flipkart minutes | Flipkart exchange | Flipkart Reset | Nothing
+      Phone 2a Plus | Sarees | CMF by Nothing phone 1 | Pocket Bazaar | Xioami 14 CIVI | Infinix Note 40 Pro 5G | iphone15 | Infinix Note 40 5G | iphone 15 plus | 
+      vivo X Foid3 Pro |  Track Orders | Manage Orders | Return Orders | Gift Cards Store | Flipkart Axis Bank Credit Card | Pay Later
+  </p><br>
+  <h6 class=" ms-5 "><b>Flipkart: The one-Stop Shopping Destination</b></h6>
+  <p id="para1" class="ms-5">
+    Flipkart is one of India’s leading e-commerce platforms, offering a wide range of products, including electronics, fashion, home essentials, books, and more. Founded in 2007 by Sachin Bansal and Binny Bansal, it started as an online bookstore before expanding into a multi-category marketplace. Known for its customer-centric approach, Flipkart has revolutionized online shopping in India through innovations like its mobile app, AI-driven recommendations, and features such as Flipkart Pay Later and no-cost EMI options. Its flagship sale event, The Big Billion Days, attracts millions of shoppers annually with unparalleled discounts and offers. With its focus on technology and logistics, Flipkart continues to shape the future of e-commerce in India.
+ </p>
+ <h6 class=" ms-5 "><b>Flipkart Plus</b></h6>
+ <p id="para1" class="ms-5">
+  Flipkart Plus is a loyalty program designed to reward frequent shoppers on Flipkart. It offers exclusive benefits to members, enhancing their shopping experience. Enrollment in Flipkart Plus is free but requires users to earn a certain number of SuperCoins, which are awarded for every purchase on the platform.
+
+</p>
+<h6 class=" ms-5 "><b>No Cost EMI</b></h6>
+ <p id="para1" class="ms-5">
+  No Cost EMI is a payment option offered on Flipkart that allows customers to purchase products in easy monthly installments (EMIs) without paying any additional interest or processing fees. It is an attractive option for buyers who want to buy expensive items like electronics, appliances, or furniture while managing their budgets effectively.
+</p>
+<h6 class=" ms-5 "><b>EMI on Debit Cards</b></h6>
+ <p id="para1" class="ms-5">
+  EMI on Debit Cards is a convenient payment option offered by Flipkart that allows customers to convert their purchases into easy monthly installments (EMIs) using their debit cards. This feature makes big-ticket purchases more affordable, even for customers without a credit card.
+</p>
+
+<h6 class=" ms-5 "><b>Mobile Exchange Offers</b></h6>
+ <p id="para1" class="ms-5">
+  Mobile Exchange Offers on Flipkart allow customers to trade in their old smartphones for a discount on the purchase of a new mobile phone. This feature helps customers save money while upgrading to the latest devices.
+</p>
+<h6 class=" ms-5 "><b>EMI on Debit Cards</b></h6>
+ <p id="para1" class="ms-5">
+  EMI on Debit Cards is a convenient payment option offered by Flipkart that allows customers to convert their purchases into easy monthly installments (EMIs) using their debit cards. This feature makes big-ticket purchases more affordable, even for customers without a credit card.
+</p>
+<h6 class=" ms-5 "><b>What Can You By From Flipkart</b></h6>
+<h6 class=" ms-5 "><b>Mobile Phones</b></h6>
+ <p id="para1" class="ms-5">
+  Mobile phones have become an essential part of daily life, serving not only as communication devices but also as tools for work, entertainment, and personal organization. With a wide range of options available on platforms like Flipkart, choosing the right mobile phone depends on your budget, brand preference, and specific requirements.
+  Look for devices powered by efficient processors like Qualcomm Snapdragon, MediaTek Dimensity, or Apple's Bionic chips, depending on your performance needs.
+  Choose phones with advanced cameras if photography is important. Features like high megapixel counts, AI enhancements, and optical image stabilization (OIS) are key.
+  Opt for a phone with at least 4000-5000mAh battery capacity for long-lasting usage.AMOLED or OLED screens provide better colors and contrast, while high refresh rates (90Hz/120Hz) ensure smooth scrolling and gaming.
+</p>
+<h6 class=" ms-5 "><b>Electronic Devices and Accessories</b></h6>
+ <p id="para1" class="ms-5">
+  Electronic devices and accessories play a crucial role in our daily lives, enhancing communication, productivity, and entertainment. From smartphones and laptops to gaming consoles and wearable technology, these gadgets cater to diverse needs and preferences. Smartphones,
+   for instance, offer cutting-edge features like high-performance processors, stunning cameras, and seamless connectivity, making them indispensable tools for work and leisure. Laptops and tablets, on the other hand, are essential for students, professionals, and creatives, 
+   offering powerful specifications and portability. Audio devices such as headphones, earbuds, and speakers deliver high-quality sound for immersive experiences, while smartwatches and fitness bands provide real-time health tracking and notifications on the go. Televisions with 
+   advanced displays like 4K UHD, OLED, and smart streaming capabilities have revolutionized home entertainment, while gaming consoles like PlayStation and Xbox provide unparalleled gaming experiences.</p>
+
+   <h6 class=" ms-5 "><b>Baby and Kids</b></h6>
+   <p id="para1" class="ms-5">
+    The Baby and Kids category encompasses a wide range of products tailored to meet the needs of babies, toddlers, and children, ensuring their comfort, safety, and development. This category 
+    includes essential items for every stage of a child’s growth, such as clothing, toys, educational tools, and baby care products. Platforms like Flipkart make shopping for these items convenient
+     by offering a vast selection from trusted brands and ensuring quality, safety, and affordability.
+   </p>
+   <h6 class=" ms-5 "><b>Books,Sports, Games</b></h6>
+   <p id="para1" class="ms-5">
+    Books play a critical role in expanding knowledge, fostering creativity, and providing entertainment. They come in various genres and formats, catering to different age groups and interests.
+    Sports products promote physical fitness, teamwork, and fun. They cater to a variety of sports, from team games to individual fitness activities.
+    Games offer entertainment, relaxation, and mental stimulation. They range from indoor board games to outdoor activities, and from video games to educational toys for children.
+   </p>
+   <h6 class=" ms-5 "><b>Grocery/Supermarts</b></h6>
+   <p id="para1" class="ms-5">
+    Grocery and Supermart products are essential for daily living, offering a wide range of food, beverages, personal care, household items, and more. These categories cater to the everyday needs of
+     individuals and families, providing convenience and variety. Online platforms like Flipkart’s Grocery & Supermart section allow customers to shop for essentials from the comfort of their homes,
+      making grocery shopping quick and hassle-free.
+   </p>
+ </div>
+ <!-- end -->
+  <!-- last -->
+  <div class="container-fluid bg-dark text-light" style="padding: 1rem;">
+    <div class="row py-4">
+        <!-- ABOUT Section -->
+        <div class="col-12 col-md-4 col-lg-1 mb-4">
+            <h6 class="text-muted">ABOUT</h6>
+            <ul class="list-unstyled">
+                <li>Contact Us</li>
+                <li>About Us</li>
+                <li>Careers</li>
+                <li>Flipkart Stories</li>
+                <li>Press</li>
+                <li>Corporate Information</li>
+            </ul>
+        </div>
+        <!-- GROUP COMPANIES Section -->
+        <div class="col-12 col-md-4 col-lg-1 mb-4">
+            <h6 class="text-muted">GROUP COMPANIES</h6>
+            <ul class="list-unstyled">
+                <li>Myntra</li>
+                <li>Cleartrip</li>
+                <li>Shopsy</li>
+            </ul>
+        </div>
+        <!-- HELP Section -->
+        <div class="col-12 col-md-4 col-lg-2 mb-4">
+            <h6 class="text-muted">HELP</h6>
+            <ul class="list-unstyled">
+                <li>Payments</li>
+                <li>Shipping</li>
+                <li>Cancellation & Returns</li>
+                <li>FAQ</li>
+            </ul>
+        </div>
+        <!-- CONSUMER POLICY Section -->
+        <div class="col-12 col-md-4 col-lg-2 mb-4">
+            <h6 class="text-muted">CONSUMER POLICY</h6>
+            <ul class="list-unstyled">
+                <li>Cancellation & Returns</li>
+                <li>Terms of Use</li>
+                <li>Security</li>
+                <li>Privacy</li>
+                <li>Sitemap</li>
+                <li>Grievance Redressal</li>
+                <li>EPR Compliance</li>
+            </ul>
+        </div>
+        <!-- MAIL US Section -->
+        <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <h6 class="text-muted">Mail Us</h6>
+            <p>
+                Flipkart Internet Private Limited,<br>
+                Buildings Alyssa, Begonia &<br>
+                Clove Embassy Tech Village,<br>
+                Outer Ring Road, Devarabeesanahalli Village,<br>
+                Bengaluru, 560103,<br>
+                Karnataka, India
+            </p>
+        </div>
+        <!-- REGISTERED OFFICE Section -->
+        <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <h6 class="text-muted">Registered Office Address:</h6>
+            <p>
+                Flipkart Internet Private Limited,<br>
+                Buildings Alyssa, Begonia &<br>
+                Clove Embassy Tech Village,<br>
+                Outer Ring Road, Devarabeesanahalli Village,<br>
+                Bengaluru, 560103,<br>
+                Karnataka, India<br>
+                CIN : U51109KA2012PTC066107<br>
+                Telephone: 044-45614700 / 044-67415800
+            </p>
+        </div>
+    </div>
+    <hr style="color: azure;">
+    <ul class="list-unstyled d-flex flex-wrap justify-content-center justify-content-lg-start align-items-center ms-5">
+        <li class="d-flex align-items-center ms-3 text-light">
+            <i class="fa-solid fa-suitcase text-warning footer-icon me-2"></i> Become a Seller
+        </li>
+        <li class="d-flex align-items-center ms-3 text-light">
+            <i class="fa-solid fa-star text-warning footer-icon me-2"></i> Advertise
+        </li>
+        <li class="d-flex align-items-center ms-3 text-light">
+            <i class="fa-solid fa-gift text-warning footer-icon me-2"></i> Gift Cards
+        </li>
+        <li class="d-flex align-items-center ms-3 text-light">
+            <i class="fa-regular fa-question text-warning footer-icon me-2"></i> Help Center
+        </li>
+        <li class="text-light">
+            © 2007-2024 Flipkart.com
+        </li>
+        <li class="ms-5">
+            <img src="./visa.svg" alt="Visa Logo" class="img-fluid">
+        </li>
+    </ul>
+</div>
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

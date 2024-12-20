@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart</title>
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+<body class="bg-light">
+   <!-- section1 -->
+     <nav class="navbar navbar-expand-lg navbar-light " style="background-color: white;">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <img src="./main.svg" class="img-fluid ms-2" alt="Logo" style="height: 40px;">
+        </a>
+    
+        <!-- Search Box -->
+        <form class="d-none d-lg-flex ms-5" style="flex-grow: 1; max-width: 600px; ">
+          <div class="input-group">
+            <span class="input-group-text bg-muted border-end-0">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+            <input 
+              id="box1" 
+              class="form-control border-start-0 " 
+              type="search" 
+              placeholder="Search for Products, Brands and More" 
+              aria-label="Search">
+          </div>
+        </form>
+    
+        <!-- Navbar Toggle (Mobile View) -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <!-- Navbar Links and Dropdowns -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav ms-5">
+            <!-- Login Dropdown -->
+              <div class="dropdown">
+            <a href="./login.html"><button class="dropdown-button text-dark bg-light"> <i class="fa-regular fa-user"></i>Login</button></a>
+            <div class="dropdown-content">
+              <a href="#"><i class="fa-regular fa-user text-dark"></i> My Profile</a>
+              <a href="#"><i class="fa-solid fa-fan text-dark"></i> Flipkart Plus Zone</a>
+              <a href="#"><i class="fa-solid fa-cube text-dark"></i> Orders</a>
+              <a href="#"><i class="fa-regular fa-heart text-dark"></i> Wishlist</a>
+                <a href="#"><i class="fa-solid fa-gift text-dark"></i> Rewards</a>
+                <a href="#"><i class="fa-solid fa-credit-card text-dark"></i> Gift Cards</a>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+            <!-- Other Links -->
+            <li class="nav-item ">
+              <a class="nav-link" href="./cart.html"><i class="fa-solid fa-cart-shopping "></i> Cart</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-solid fa-gift ms-4"></i> Become a Seller</a>
+            </li>
+    
+            <!-- More Options Dropdown -->
+          
+          <div class="dropdown">
+            <a href="./login.html"><button class="dropdown-button text-dark bg-light">  <i class="fa-solid fa-ellipsis-vertical text-dark ms-5"></i></button></a>
+            <div class="dropdown-content">
+              <a href="#"><i class="fa-regular fa-bell"></i> Notification Preferences</a>
+              <a href="#"><i class="fa-solid fa-headset"></i> 24x7 Customer Care</a>
+              <a href="#"><i class="fa-regular fa-arrow-up-right"></i> Advertise</a>
+              <a href="#"><i class="fa-solid fa-download"></i> Download App</a>
+            </div>
+          </div>
+
+
+
+
+
+    
+          <!-- Search Box (Mobile View) -->
+          <form class="d-lg-none mt-2">
+            <div class="input-group">
+              <span class="input-group-text bg-light border-end-0">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </span>
+              <input 
+                class="form-control border-start-0" 
+                type="search" 
+                placeholder="Search for Products, Brands and More" 
+                aria-label="Search">
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- end -->
+     <!-- section2 -->
+     <div class="card   mt-3 ms-5 " style="height: 150px; width: 93%; border-color: white; ">
+      <div  class="card-body justify-content-center align-items-center text-center ">
+        <figure class="figure float-start me-5 ms-5">
+          <img src="./grocery.webp" class="figure-img img-fluid rounded" alt="...">
+          <figcaption class="figure-caption text-dark "><b>Grocery</b></figcaption>
+        </figure>
+        <figure class="figure float-start me-5 ms-2">
+          <img src="./mobile.webp" class="figure-img img-fluid rounded" alt="...">
+          <figcaption class="figure-caption text-dark "><b>Mobiles</b></figcaption>
+        </figure>
+        <figure class="figure float-start me-5 ms-2">
+          <img src="./fas.png" class="figure-img img-fluid rounded" alt="...">
+          <figcaption class="figure-caption text-dark "><b>Fashion</b></figcaption>
+        </figure>
+        <figure class="figure float-start me-5 ms-2">
+          <img src="./elect.png" class="figure-img img-fluid rounded mt-2" alt="...">
+          <figcaption class="figure-caption text-dark "><b>Electronics</b></figcaption>
+        </figure>
+        <figure class="figure float-start me-5 ms-2">
+          <img src="./mobile.webp" class="figure-img img-fluid rounded" alt="...">
+          <figcaption class="figure-caption text-dark "><b>Mobiles</b></figcaption>
+        </figure>
+        <figure class="figure float-start me-5 ms-2">
+          <img src="./mobile.webp" class="figure-img img-fluid rounded" alt="...">
+          <figcaption class="figure-caption text-dark "><b>Mobiles</b></figcaption>
+        </figure>
+        <figure class="figure float-start me-5 ms-2">
+          <img src="./mobile.webp" class="figure-img img-fluid rounded" alt="...">
+          <figcaption class="figure-caption text-dark "><b>Mobiles</b></figcaption>
+        </figure>
+        
+        
+
+       
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

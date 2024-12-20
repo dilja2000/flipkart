@@ -1,0 +1,56 @@
+/* #width{
+    width: 90%;
+} */
+ /* Ensure the dropdown appears on hover */
+ /* .dropdown:hover .dropdown-menu {
+    display: block;
+} */
+
+/* Adjust dropdown alignment with the image */
+/* .dropdown-menu {
+    margin-top: 10px;
+} */
+
+/* Center figure within the dropdown */
+/* .figure {
+    display: inline-block;
+    text-align: center;
+} */
+
+/* Style for the image */
+/* .figure img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+body{
+    background-color: aquamarine;
+}
+/
+ *
+
+        /* Ensure the dropdown appears on hover */
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        /* Center images and text */
+        .nav-item img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .nav-link {
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        .dropdown-menu {
+            margin-top: 10px;
+        }
+        #nav1{
+            width: 94%;
+            }
